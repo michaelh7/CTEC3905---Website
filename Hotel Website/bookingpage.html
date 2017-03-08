@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>About - Morgans Hotel Group</title>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/mobile.css" media="screen and (max-width : 568px)">
+	<script type="text/javascript" src="js/mobile.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script>
+             $(document).ready(function() {
+             $("#datepicker").datepicker();
+             });
+            </script>
+
+</head>
+<body>
+	<div id="header">
+	<a href="index.html"> <img src="images/tom.png"></a>	
+		<ul id="navigation">
+			<li>
+				<a href="index.html">Home</a>
+			</li>
+			<li class="selected">
+				<a href="about.html">About Us</a>
+			</li>
+			<li>
+				<a href="Rooms.html">Rooms</a>
+			</li>
+			<li>
+				<a href="contact.html">Contact Us</a>
+			</li>
+		</ul>
+	</div>
+	<div id="body">
+	
+		<h2><span>Book a Room with Morgans Hotel</span></h2>
+		<div>
+			<img src="images/.jpg" alt="">
+			<div class="">
+				     <form action="Qoute Table" id="qoute">
+            
+            <!--placeholder used in order to place text within a box rather than using a title under the box, in order to declutter the webpage-->
+            
+            <input type="text" required placeholder="First Name" id="firstname" ><br> 
+        
+            <input type="text" required placeholder="Last Name" id= "lastname"><br>
+            
+            <input type="Number" required placeholder="Contact Number" id="contactno" ><br>
+                   
+            <input type="email" required placeholder="Email Address" id="emailaddress"><br>
+
+            <input type="text" required placeholder="Number Of Adults" min="1" max="3" id= "NoOfP"><br>
+
+            <input type="text" required placeholder="Number of children" min="1" max="3" id= "NoOfC"><br>
+   
+			<input id="datepicker" required placeholder="Arrival Date?"><br>
+			
+            <input id="datepicker" required placeholder="Departure Date?"><br>
+        
+            <input type="submit" id="submit">
+        </form>      
+			</div>
+		</div>
+	</div>
+	<div id="footer">
+		<div>
+			<p>&copy; 2017 by Morgans Hotel Group. All rights reserved.</p>
+			<ul>
+				<li>
+					<a href="https://twitter.com/MorgansHotels"target="_blank"><img src= "images/twitter.png" width="32" height="32" id="Twitter" /></a>
+				</li>
+				<li>
+					<a href="https://www.facebook.com/MorgansHotelGroup" target="_blank"> <img src= "images/facebook.png" width="32" height="32" id="facebook" /></a>
+				</li>
+				<li>
+					<a href="https://www.instagram.com/backofhousemhg/"target="_blank" ><img src= "images/instagram.png" width="32" height="32" id="instagram" /></a>
+				</li>
+				<li>
+					<a href="https://www.youtube.com/user/MorgansHotels"target="_blank"><img src= "images/youtube.png" width="32" height="32" id="youtube" /></a>
+				</li>
+				<li>
+					<a href="https://www.plus.google.com/+MorgansHotelGroup"target="_blank"><img src= "images/google.png" width="32" height="32" id="youtube" /></a>
+				</li>
+			</ul>
+		</div>
+    </div>
+	
+</body>
+</html>
