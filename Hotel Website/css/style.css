@@ -15,7 +15,9 @@
 		 url('../fonts/leckerlione/leckerlione-regular-webfont.ttf') format('truetype'),
 		 url('../fonts/leckerlione/leckerlione-regular-webfont.svg#leckerli_oneregular') format('svg');
 }
-
+/*******************************************************************************
+                         Font formattings
+*******************************************************************************/
 body {
 	background: #fff;
 	font-family: Arial, Helvetica, sans-serif;
@@ -39,6 +41,10 @@ p a {
 p a:hover {
 	color: #898989;
 }
+/*******************************************************************************
+                         formatting for headers on all pages.
+*******************************************************************************/
+
 #header {
 	margin: 0 auto;
 	padding: 40px 0 50px;
@@ -81,6 +87,10 @@ p a:hover {
 #header ul li a:hover, #header ul li.selected a {
 	color: #0ba39c;
 }
+
+/*******************************************************************************
+                         Body text and image formatting for entire website
+*******************************************************************************/
 #body {
 	margin: 0;
 	padding: 0 0 30px;
@@ -111,24 +121,27 @@ p a:hover {
 	margin: 24px 0 0;
 	padding: 0;
 }
-#body > div .article {
+/*******************************************************************************
+                         formatting for about us page
+*******************************************************************************/
+#body > div .aboutus {
 	margin: 0 auto;
 	padding: 30px 30px 0;
 	width: 560px;
 }
-#body > div .article h2 {
+#body > div .about h2 {
 	font-family: "Arial Black", Gadget, sans-serif;
 	font-size: 25px;
 	font-weight: normal;
 	margin: 0 0 30px;
 }
-#body > div .article h3 {
+#body > div .aboutus h3 {
 	color: #252525;
-	line-height:4px;
-	margin: 0;
-	padding: 0;
+	line-height:2px;
+	margin:1,2em;
+	padding: 1.4em;
 }
-#body > div .article h4 {
+#body > div .aboutus h4 {
 	background: #252525;
 	color: #fff;
 	display: inline-block;
@@ -138,7 +151,7 @@ p a:hover {
 	margin: 0 0 30px;
 	padding: 8px 27px 10px;
 }
-#body > div .article p {
+#body > div .aboutus p {
 	margin: 0 0 30px;
 }
 #body div ul {
@@ -172,6 +185,10 @@ p a:hover {
 #body div ul li .figure:hover img {
 	opacity: 1;
 }
+
+
+
+
 #body div ul li div {
 	float: left;
 	margin: 0;
@@ -213,6 +230,9 @@ p a:hover {
 	position: relative;
 	width: 100%;
 }
+/*******************************************************************************
+                            Image formating
+*******************************************************************************/
 #body #featured img {
 	border: 0;
 	display: block;
@@ -304,6 +324,9 @@ p a:hover {
 	margin: 0;
 	padding: 33px 0 0;
 }
+    /*******************************************************************************
+                            Contact Page form
+*******************************************************************************/
 #body form {
 	margin: 0 auto;
 	padding: 24px 0 0;
@@ -341,6 +364,75 @@ p a:hover {
 	color: #252525;
 	cursor: pointer;
 }
+
+
+
+/*******************************************************************************
+                            Rooms booking page
+*******************************************************************************/
+.window-button:before,
+.window-button:after {
+  content: '';
+  width: 10px;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  margin-top: 2px;
+  left: 10%;
+  background: #fff;
+}
+
+.window-button:before,
+.window-button:after {
+  transition: all 0.3s ease-out;
+}
+
+.window-button.left-check:before {
+  transform: rotate(0deg);
+}
+
+.window-button.left-check:after {
+  transform: rotate(90deg) translate(-5px, -5px);
+}
+
+.window-button.right-check:before {
+  transform: rotate(0deg) translateY(-10px);
+}
+
+.window-button.right-check:after {
+  transform: rotate(90deg) translate(-5px, 5px);
+}
+
+.btn:hover .window-button.left-check:before {
+  transform: rotate(45deg);
+}
+
+.btn:hover .window-button.left-check:after {
+  transform: rotate(135deg) translate(-5px, -5px);
+}
+
+.btn:hover .window-button.right-check:before {
+  transform: rotate(135deg) translateX(-15px) translateY(-5px);
+}
+
+.btn:hover .window-button.right-check:after {
+  transform: rotate(45deg);
+}
+
+.btn:hover .window-button:before,
+.btn:hover .window-button:after {
+  background: white;
+}
+
+
+
+
+
+
+
+/*******************************************************************************
+                            Webpage Footer
+*******************************************************************************/
 #footer {
 	background: #252525;
 	margin: 0;

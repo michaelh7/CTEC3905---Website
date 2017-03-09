@@ -1,34 +1,45 @@
 <!doctype html>
 <html>
 <head>
+    <!------------------------------------------------------------------------------
+                                Links to style sheets and font awesome
+    ------------------------------------------------------------------------------->
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Rooms - Morgans Hotel Group</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/mobile.css" media="screen and (max-width : 568px)">
 	<script type="text/javascript" src="js/mobile.js"></script>
+    <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+    <!------------------------------------------------------------------------------
+                                Header with logo and page links
+    ------------------------------------------------------------------------------->
 	<div id="header">
 	<a href="index.html"><img src="images/tom.png"> </a>
 		<ul id="navigation">
-			<li>
-				<a href="index.html">Home</a>
-			</li>
-			<li>
-				<a href="about.html">About Us</a>
-			</li>
 			<li class="selected">
-				<a href="Rooms.html">Rooms</a>
+				<i class="fa fa-home"></i> <a href="index.html">Home</a>
 			</li>
 			<li>
-				<a href="contact.html">Contact Us</a>
+				<i class="fa fa-info-circle"></i> <a href="about.html">About us</a>
+			</li>
+			<li>
+				<i class="fa fa-hotel"></i> <a href="rooms.html">Rooms</a>
+			</li>
+			<li>
+				<i class="fa fa-envelope-open"></i> <a href="contact.html">Contact us</a>
 			</li>
 		</ul>
 	</div>
 	
             <div id="body"> 
-                
+    <!------------------------------------------------------------------------------
+                               Main page Room images and links
+    ------------------------------------------------------------------------------->
         <h2><span>Rooms</span></h2>
 		<ul class="Rooms">
 				<li>
@@ -50,15 +61,23 @@
 					<span>Single Room</span>
 				</a>
             </li>
-                
-                <div id="featured">
-                    <a href="bookingpage.html" class="more">Book your room here!</a>
-                </div>
-            </ul>
+                </ul>
     </div>
-      
-
-
+      <div class="well">
+  <div class="row">
+    <div class="col-sm-4 col-sm-offset-4">
+        <button class="btn btn-lg btn-success btn-block">
+          <span class="window-button left-check"></span>
+          <span class="window-button right-check"></span>
+          
+          <a href=bookingpage.html> Book a Room Now!</a>
+        </button>
+      </div>
+          </div>
+    </div>
+    <!------------------------------------------------------------------------------
+                                Footer with social media links
+    ------------------------------------------------------------------------------->
                 
 	       
         

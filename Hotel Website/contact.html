@@ -7,26 +7,32 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/mobile.css" media="screen and (max-width : 568px)">
 	<script type="text/javascript" src="js/mobile.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+    <!------------------------------------------------------------------------------
+                                Header with logo and page links
+    ------------------------------------------------------------------------------->
 	<div id="header">
 		<a href="index.html"> <img src="images/tom.png"> </a>
 		<ul id="navigation">
-			<li>
-				<a href="index.html">Home</a>
-			</li>
-			<li>
-				<a href="about.html">About Us</a>
-			</li>
-			<li>
-				<a href="Rooms.html">Rooms</a>
-			</li>
-			
 			<li class="selected">
-				<a href="contact.html">Contact Us</a>
+				<i class="fa fa-home"></i> <a href="index.html">Home</a>
+			</li>
+			<li>
+				<i class="fa fa-info-circle"></i> <a href="about.html">About us</a>
+			</li>
+			<li>
+				<i class="fa fa-hotel"></i> <a href="rooms.html">Rooms</a>
+			</li>
+			<li>
+				<i class="fa fa-envelope-open"></i> <a href="contact.html">Contact us</a>
 			</li>
 		</ul>
 	</div>
+    <!------------------------------------------------------------------------------
+            Contact form with placeholders to reduce the clutter on the webpage
+    ------------------------------------------------------------------------------->
 	<div id="body">
 		<h2><span>Want to contact us?</span></h2>
 		<form action="contact.html">
@@ -38,7 +44,9 @@
 			<input type="submit" name="send" id="send" value="send">
 		</form>
 	</div>
-
+    <!------------------------------------------------------------------------------
+                                Footer with social media links and logos
+    ------------------------------------------------------------------------------->
 
 	<div id="footer">
 		<div>

@@ -6,47 +6,75 @@
 	<title>About - Morgans Hotel Group</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/mobile.css" media="screen and (max-width : 568px)">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script type="text/javascript" src="js/mobile.js"></script>
 </head>
 <body>
+    <!------------------------------------------------------------------------------
+                                Header with logo and page links
+    ------------------------------------------------------------------------------->
 	<div id="header">
 	<a href="index.html"> <img src="images/tom.png"></a>	
 		<ul id="navigation">
-			<li>
-				<a href="index.html">Home</a>
-			</li>
 			<li class="selected">
-				<a href="about.html">About Us</a>
+				<i class="fa fa-home"></i> <a href="index.html">Home</a>
 			</li>
 			<li>
-				<a href="Rooms.html">Rooms</a>
+				<i class="fa fa-info-circle"></i> <a href="about.html">About us</a>
 			</li>
 			<li>
-				<a href="contact.html">Contact Us</a>
+				<i class="fa fa-hotel"></i> <a href="rooms.html">Rooms</a>
+			</li>
+			<li>
+				<i class="fa fa-envelope-open"></i> <a href="contact.html">Contact us</a>
 			</li>
 		</ul>
 	</div>
 	<div id="body">
-	
+<!------------------------------------------------------------------------------
+                               font awesome logos for the about us page
+------------------------------------------------------------------------------->
 		<h2><span>About Morgans Hotel</span></h2>
 		<div>
-			<img src="images/photographer.jpg" alt="">
-			<div class="article">
-				<h3>Free Parking</h3>
+			<div class="aboutus">
+				<h3> <i class="fa fa-car"></i>Free Parking</h3>
 				<p>
-					Our hotel has parking spaces to facilitate up to 90 cars, our car park is £4 for 24 hours or £6 for 48 hours. For further information please feel free to <a href="contact.html"> Contact us</a>
+                    Our hotel has parking spaces to facilitate up to 90 cars, our car park is £4 for 24 hours or £6 for 48 hours.<br> For further information please feel free to <a href="contact.html">Contact us</a>
 				</p>
-				<h3>Internet</h3>
-				<p>
 				
-				</p>
-				<h3>Where are we?</h3>
+				<h3> <i class="fa fa-hotel"></i>What comes within our rooms?</h3>
 				<p>
-					We are located
+					All of our rooms come with the following;<br>
+                    <i class="fa fa-wifi"></i>Internet<br>
+                    <i class="fa fa-desktop"></i>Television with 33 channels<br>
+                    <i class="fa fa-bathtub"></i> Washroom <br>
+                    <i class="fa fa-cofee"></i>Kettle <br>
+                    <i class="fa fa-cutlery"></i> Minibar <br>
+                </div>
+                    
+                
+                
+    
+				
+                <h3> <i class="fa fa-wifi"></i>Internet</h3>
+				<p>
+				Internet within Morgans Hotel comes free for up to 1 hour, and then £2.50 for £12 hours after this.
 				</p>
+                <h3>Where are we?</h3>
+                <p> We are located at;
+                    45 St Martin's Lane
+                    London 
+                    WC2N 4HX <br>
+                    For directions see the map below:
+                </p>
+    <!------------------------------------------------------------------------------
+                                Google maps Iframe
+    ------------------------------------------------------------------------------->
                 
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.1495148481513!2d-0.12877108392886444!3d51.51047291829901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604cdcce28315%3A0x9b7c885d7d05703!2s45+St+Martin&#39;s+Ln%2C+London+WC2N+4HX!5e0!3m2!1sen!2suk!4v1489000120915" width="600" height="300" frameborder="0" style="border:0" allowfullscreen></iframe> 
-                
+                <div class="iframe">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.1495148481513!2d-0.12877108392886444!3d51.51047291829901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604cdcce28315%3A0x9b7c885d7d05703!2s45+St+Martin&#39;s+Ln%2C+London+WC2N+4HX!5e0!3m2!1sen!2suk!4v1489000120915" width="500" height="200" frameborder="0" style="border:0" allowfullscreen></iframe> 
+                </div>
+            
                 
 				<h3></h3>
 				<p>
@@ -54,7 +82,11 @@
 				</p>
 			</div>
 		</div>
-	</div>
+	
+    <!------------------------------------------------------------------------------
+                                Footer with social media links
+    ------------------------------------------------------------------------------->
+    
 	<div id="footer">
 		<div>
 			<p>&copy; 2017 by Morgans Hotel Group. All rights reserved.</p>

@@ -13,6 +13,9 @@ body {
 #header a.logo img {
 	width: 90%;
 }
+    /*******************************************************************************
+                navigation bar changes for mobile device
+*******************************************************************************/
 #mobile-navigation {
 	background: url(../images/mobile-menu.png) no-repeat 0 0;
 	display: block;
@@ -82,13 +85,13 @@ body {
 #body {
 	width: 100%;
 }
-#body h1 {
+#body h2 {
 	display: block;
 	font-size: 20px;
 	margin: 0 auto;
 	width: 90%;
 }
-#body h1 span {
+#body h2 span {
 	display: block;
 	padding: 3%;
 	width: 94%;
@@ -101,11 +104,11 @@ body {
 	margin: 24px 0 30px;
 	width: 98%
 }
-#body > div .article {
+#body > div .aboutus {
 	padding: 0;
 	width: 100%;
 }
-#body > div .article h2, #body > div .article h4 {
+#body > div .aboutus h2, #body > div .aboutus h3 {
 	font-size: 18px;
 	font-weight: bold;
 }
@@ -157,10 +160,6 @@ body {
 	margin: 0;
 	width: 100%;
 }
-#body ul.gallery li {
-	float: left;
-	margin: 0 0 5% 5%;
-	width: 42%;
 }
 #body > ul li a img {
 	width: 98%;

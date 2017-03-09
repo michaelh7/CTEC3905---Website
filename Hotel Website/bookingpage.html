@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>About - Morgans Hotel Group</title>
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/mobile.css" media="screen and (max-width : 568px)">
 	<script type="text/javascript" src="js/mobile.js"></script>
@@ -15,57 +16,104 @@
              $("#datepicker").datepicker();
              });
             </script>
-
+    
 </head>
 <body>
+    <!-- Navigation bar and hotel logo-->
 	<div id="header">
 	<a href="index.html"> <img src="images/tom.png"></a>	
 		<ul id="navigation">
-			<li>
-				<a href="index.html">Home</a>
-			</li>
 			<li class="selected">
-				<a href="about.html">About Us</a>
+				<i class="fa fa-home"></i> <a href="index.html">Home</a>
 			</li>
 			<li>
-				<a href="Rooms.html">Rooms</a>
+				<i class="fa fa-info-circle"></i> <a href="about.html">About us</a>
 			</li>
 			<li>
-				<a href="contact.html">Contact Us</a>
+				<i class="fa fa-hotel"></i> <a href="rooms.html">Rooms</a>
+			</li>
+			<li>
+				<i class="fa fa-envelope-open"></i> <a href="contact.html">Contact us</a>
 			</li>
 		</ul>
 	</div>
 	<div id="body">
 	
 		<h2><span>Book a Room with Morgans Hotel</span></h2>
-		<div>
-			<img src="images/.jpg" alt="">
-			<div class="">
-				     <form action="Qoute Table" id="qoute">
-            
-            <!--placeholder used in order to place text within a box rather than using a title under the box, in order to declutter the webpage-->
-            
-            <input type="text" required placeholder="First Name" id="firstname" ><br> 
-        
-            <input type="text" required placeholder="Last Name" id= "lastname"><br>
-            
-            <input type="Number" required placeholder="Contact Number" id="contactno" ><br>
-                   
-            <input type="email" required placeholder="Email Address" id="emailaddress"><br>
+        <!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Hotel Booking Form</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
-            <input type="text" required placeholder="Number Of Adults" min="1" max="3" id= "NoOfP"><br>
+<meta name="viewport" content="width=device-width, initial-scale=1.5">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
-            <input type="text" required placeholder="Number of children" min="1" max="3" id= "NoOfC"><br>
-   
-			<input id="datepicker" required placeholder="Arrival Date?"><br>
-			
-            <input id="datepicker" required placeholder="Departure Date?"><br>
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  
+<html>
+  <body>
+    <div class="diamond"></div>
+    <div class="form-wrap">
+      <h2 class="mob">Hotel Booking Form</h2>
+      <form action="">
+        <div class="location">
+          <label for="Name">NAME</label><br/>
+          <input type="text" name="name" placeholder="Full Name"/><br/>
+        </div>
+        <div class="guests">
+          <label for="guests">NUMBER OF GUESTS</label><br/><br/>
+          <button class="counter-btn" type="button" id="cnt-down">-</button>
+          <input type="text" id="guestNo" name="guests" value="2"/>
+          <button class="counter-btn" type="button" id="cnt-up">+</button>
+        </div>
+        <div class="dates">
+          <div class="arrival">
+            <label for="arrival">ARRIVAL</label><br/>
+            <input name="arrival" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="10/03/2016"/>
+          </div>
+          <div class="departure">
+            <label for="arrival">DEPARTURE</label><br/>
+            <input name="departure" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="05/11/2016"/>
+          </div>
+        </div>
+      </form>
+      <button class="btn" type="button">BOOK NOW</button>
+      <div class="linkbox">
+        <div class="links">
+          <div class="origin">
         
-            <input type="submit" id="submit">
-        </form>      
-			</div>
-		</div>
-	</div>
+          </div>
+          <div class="me">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
+
+        
+        
+	</div>	
+    <!------------------------------------------------------------------------------
+                                Footer with social media links
+    ------------------------------------------------------------------------------->
+            
+	
 	<div id="footer">
 		<div>
 			<p>&copy; 2017 by Morgans Hotel Group. All rights reserved.</p>
